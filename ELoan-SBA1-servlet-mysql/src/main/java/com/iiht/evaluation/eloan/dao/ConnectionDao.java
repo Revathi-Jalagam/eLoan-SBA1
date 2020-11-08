@@ -39,7 +39,7 @@ public class ConnectionDao {
 			} catch (ClassNotFoundException e) {
 				throw new SQLException(e);
 			}
-			jdbcConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/eloan", "root", "9985342824");
+			jdbcConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/eloan", "root", "P@55word");
 			//jdbcConnection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
 		}
 		return jdbcConnection;
