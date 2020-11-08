@@ -1,0 +1,43 @@
+Create Database eLoan
+
+Use eLoan
+
+Create Table UsersInfo 
+(UserId int NOT NULL AUTO_INCREMENT, 
+UserName varchar(20), 
+DisplayName varchar(50), 
+IsActive bit, 
+UserType varchar(1), 
+Address varchar(200), 
+MobileNo varchar(10), 
+Email varchar(50), 
+Age int, 
+Password Varchar(20), 
+PRIMARY KEY (UserId));
+
+
+Create Table LoanInfo 
+(UserId int, 
+LoanName varchar(20), 
+ApplicationNumber int NOT NULL Auto_Increment, 
+AppliedAmount int, 
+ApprovedAmount int, 
+ApplicationDate date, 
+BusinessStructure varchar(20), 
+BillingIndicator varchar(20), 
+TaxIndicator varchar(20), 
+LoanStatus varchar(10), 
+Remarks varchar(200), 
+Primary Key (ApplicationNumber));
+
+
+Create Table LoanDetails 
+(ApplicationNumber int, 
+LoanTerm int, 
+StartDate date, 
+ClosureDate date, 
+MonthlyPayment int,
+TermPaymentAmount int);
+
+
+
